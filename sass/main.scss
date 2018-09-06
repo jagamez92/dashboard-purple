@@ -1,0 +1,113 @@
+$primary: #563D7C;
+$texto: #3B3B3B;
+
+@import "../bootstrap-4.1.2/scss/bootstrap";
+
+//ESTILOS GENERALES//
+body{
+  background: #f2f2f2;
+}
+.titulo{
+  color: $primary;
+  @include media-breakpoint-down(sm){
+    font-size: 20px;
+  }
+}
+p{
+  color: $texto;
+}
+
+.foto-miniatura{
+  width: 38px;
+  height: 38px;
+  img{
+    width: 100%;
+    border-radius: 100%;
+  }
+}
+//HEADER//
+header{
+  min-height: 60px;
+  .nav{
+    li a{
+      color: #fff;
+    }
+  }
+  .navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+  }
+  .menu{
+    @include media-breakpoint-down(sm){
+      position: absolute;
+      top: 50px;
+      width: 100%;
+      background: $primary;
+      z-index: 17;
+      left: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+.logo-container{
+  .logo{
+    @include media-breakpoint-down(md){
+      font-size: 25px;
+    }
+    @include media-breakpoint-down(sm){
+      font-size: 20px;
+    }
+  }
+}
+//MAIN//
+
+.info-box{
+  background: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0px 6px 5px -2px rgba(201,201,201,0.85);
+  -moz-box-shadow: 0px 6px 5px -2px rgba(201,201,201,0.85);
+  box-shadow: 0px 6px 5px -2px rgba(201,201,201,0.85);
+}
+
+.main{
+  .info-rank{
+    i{
+      font-size: 28px;
+      &.beginner{
+        opacity: .2;
+      }
+      &.bronze{
+        color: #CD7F32;
+        opacity: .2;
+      }
+      &.silver{
+        color: #8a9597;
+        opacity: .2;
+      }
+      &.gold{
+        color: #ffbf00;
+      }
+    }
+  }
+  .estadisticas{
+    .barras-estadisticas-row{
+      .label{
+        font-size: 14px;
+      }
+    }
+  }
+}
+//
+//@media screen and (max-width: 1199px){}
+//
+
+@media screen and (max-width: 767px){
+
+}
+//
+//@media screen and (max-width: 575px){}
+
+
+
+
